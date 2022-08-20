@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age cal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+    
+</head>
+<body>
+
+    <center>
+        <form >
+            <center><h1>Age Cal</h1></center>
+            <label > AGE:</label>
+            <input  placeholder="Enter your age" padding-left=20px; type="text" name="number" id="number"   > 
+            <input  type="button" value="submit" id="btn">
+            <center><p id="year">year:</p></center>
+        </form>
+    <center>
+        <script>
+                function calculate() {
+                    var number=document.getElementById("number").value;
+                    if(number== "" || number==0)
+                    {
+                        alert(" enter your  correct age");
+                          return;
+                    }
+                        var date=new Date().getFullYear();
+                        var birthyear=number -date;
+                        document.getElementById("year").style.display="block";
+                        document.getElementById("year").innerHTML="Your brith year is"  + birthyear;
+                }
+                    document.getElementById("year").style.display="none";
+                    document.getElementById("btn").onclick=function () {
+                     calculate();
+            }
+             
+        </script>
+
+
+</body>
+</html>

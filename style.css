@@ -1,0 +1,15 @@
+form{
+    margin:10;
+    color:black;
+}
+body{
+    background-color: rgb(205, 255, 222);
+   }
+input{
+    margin-top: 35px;
+    padding-left: 15;
+}
+h1{
+    margin-top: auto;
+    margin-bottom: 35px;
+}
